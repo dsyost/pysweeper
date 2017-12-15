@@ -81,7 +81,9 @@ if __name__ == "__main__":
     width = int(input("what width?\n> "))
     mine_number = int(input("how many mines?\n> "))
     s = sweeper(height,width,mine_number)
-    s.additionalComment("you can either explore or mark in the grid by first putting\nthe command followed by height and width\nie. mark 3 2 keep in mind the upper left hand corrner is 1 1")
+    s.additionalComment("you can either explore or mark in the grid by first putting\n"
+                        "the command followed by height and width\n"
+                        "ie. mark 3 2 keep in mind the upper left hand corrner is 1 1")
     while True:
         s.displayGrid()
         command = input("> ")
